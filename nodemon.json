@@ -1,0 +1,7 @@
+{
+  "watch": ["next.config.ts", "postcss.config.mjs", "tsconfig.json", ".env.local"],
+  "ext": "ts,mjs,json",
+  "ignore": ["src", "node_modules", ".next"],
+  "exec": "next dev",
+  "delay": 500
+}

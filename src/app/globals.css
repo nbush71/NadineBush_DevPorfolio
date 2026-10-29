@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+@theme {
+  --color-paper: #f3efe7;
+  --color-card: #fbf9f4;
+  --color-ink: #15211f;
+  --color-muted: #5b6866;
+  --color-line: #d9d2c4;
+  --color-accent: #0b7a83;
+  --color-accent-soft: #d5ebe8;
+  --color-on-accent: #ffffff;
+  --font-display: var(--font-bricolage), ui-sans-serif, system-ui, sans-serif;
+  --font-code: var(--font-jetbrains), ui-monospace, Menlo, monospace;
+}
+
+:root[data-theme="dark"] {
+  --color-paper: #101a1b;
+  --color-card: #162324;
+  --color-ink: #ece8de;
+  --color-muted: #9aaba8;
+  --color-line: #27393a;
+  --color-accent: #5ccfc4;
+  --color-accent-soft: #1b3534;
+  --color-on-accent: #0b1718;
+}
+
+html { scroll-behavior: smooth; scroll-padding-top: 5rem; }
+body { background: var(--color-paper); color: var(--color-ink); font-family: var(--font-display); }
+:focus-visible { outline: 2px solid var(--color-accent); outline-offset: 3px; }
+.dotgrid { background-image: radial-gradient(var(--color-line) 1.2px, transparent 1.2px); background-size: 22px 22px; }
+.noscrollbar { scrollbar-width: none; }
+.noscrollbar::-webkit-scrollbar { display: none; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
