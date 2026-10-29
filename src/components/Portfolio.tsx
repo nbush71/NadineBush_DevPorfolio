@@ -128,7 +128,7 @@ export default function Portfolio() {
               <div className="flex flex-wrap gap-3">
                 <a href="#projects" className={primary}>See my work</a>
                 <a href={links.linkedin} target="_blank" rel="noreferrer" className={outline}>LinkedIn</a>
-                {links.resume && <a href={links.resume} target="_blank" rel="noreferrer" className={outline}>Resume</a>}
+                
               </div>
               <ul className="flex flex-wrap gap-x-8 gap-y-2 pt-2 text-sm">
                 <li>{projects.length} live projects</li>
@@ -232,7 +232,7 @@ export default function Portfolio() {
               <div className="flex flex-wrap gap-3">
                 <button onClick={() => setContact(true)} className={primary}>Send me a message</button>
                 <a href={links.linkedin} target="_blank" rel="noreferrer" className={outline}>LinkedIn</a>
-                {links.resume && <a href={links.resume} target="_blank" rel="noreferrer" className={outline}>Resume</a>}
+                
                 <a href={links.github} target="_blank" rel="noreferrer" className={outline}>GitHub</a>
               </div>
             </div>
